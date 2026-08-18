@@ -2,8 +2,9 @@
 // sub-projects/modules.
 buildscript {
     repositories {
-        jcenter()
+        google()
         mavenCentral()
+        maven { url 'https://jitpack.io' }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:2.3.0'
@@ -13,8 +14,9 @@ buildscript {
 apply plugin: 'com.android.application'
 
 repositories {
-    jcenter()
+    google()
     mavenCentral()
+    maven { url 'https://jitpack.io' }
 }
 
 configurations {
